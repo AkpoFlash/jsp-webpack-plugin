@@ -2,11 +2,11 @@
 This plugin intends for generate *.jsp file (with injected your bundles and chunks)
 
 # Install
-`npm i --save-dev html-webpack-plugin`
+`npm i --save-dev jsp-webpack-plugin`
 
 or
 
-`yarn add --dev html-webpack-plugin`
+`yarn add --dev jsp-webpack-plugin`
 
 # Usage
 
