@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/AkpoFlash/jsp-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/AkpoFlash/jsp-webpack-plugin#readme"
+  "homepage": "https://github.com/AkpoFlash/jsp-webpack-plugin#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }
