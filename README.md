@@ -24,7 +24,8 @@ module.exports = {
     },
     plugins: [
         new JspWebpackPlugin({
-            template: path.join(__dirname, '/index.jsp'),
+            template: path.join(__dirname, '/src/index.jsp'),
+            filename: path.join(__dirname, '/dist/index.jsp'),
         })
     ]
 };
