@@ -11,6 +11,7 @@ class JspWebPackPlugin {
         this.options = extend(
             {
                 template: path.join(__dirname, 'index.jsp'),
+                useBuildPath: true,
                 filename: 'index.jsp',
             },
             options
@@ -79,11 +80,11 @@ class JspWebPackPlugin {
     }
 
     generateScriptTag(chunk) {
-        return `<script type="text/javascript" src="<%= buildPath(request,"/${chunk}")%>" charset="utf-8"></script>`;
+        return `<script type="text/javascript" src="${this.options.useBuildPath ? `<%= buildPath(request,"/${chunk}")%>`: chunk }" charset="utf-8"></script>`;
     }
 
     generateStyleTag(chunk) {
-        return `<link rel="stylesheet" href="<%= buildPath(request,"/${chunk}")%>" />`;
+        return `<link rel="stylesheet" href="${this.options.useBuildPath ? `<%= buildPath(request,"/${chunk}")%>`: chunk }" />`;
     }
 }
 
